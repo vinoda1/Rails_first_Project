@@ -1,0 +1,41 @@
+
+<center>
+<h1>New Article</h1>
+
+<%= form_with model: @article do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+    
+  </div>
+
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %><br>
+    
+  </div>
+
+  <div>
+    <%= form.label :author %><br>
+    <%= form.text_field :author %><br>
+    
+  </div>
+
+  <div>
+    <%= form.label :pages %><br>
+    <%= form.text_field :pages %><br>
+    
+  </div>
+
+  <div>
+    <%= form.label :price %><br>
+    <%= form.text_field :price %><br>
+    
+  </div>
+  <br><br>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+</center>
